@@ -17,38 +17,41 @@
 
   <!-- header con logo -->
   <header>
-    <div class="container p-1">
+    <div class="container">
       <div class="row">
         <div class="col-12">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"> <img src="./img/duck.png" alt="Logo" width="70" height="70" class="img-fluid"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Catalogo Libri</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Anagrafica Utenti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Storico Prestiti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Help</a>
-        </li></ul></div>
-        
-          
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-light" type="submit">Cerca</button>
-      </form>
-    </div>
-  </div>
-</nav>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="./img/duck.png" alt="Logo" width="70" height="70"
+                  class="img-fluid"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Catalogo Libri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Anagrafica Utenti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Storico Prestiti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                  </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </div>
         </nav>
       </div>
@@ -83,7 +86,8 @@
           <table class="table table-striped text-start">
             <thead>
               <tr>
-                <th scope="col">Titolo</th>
+                <th scope="col" class="w-50">Titolo</th>
+                <th scope="col" class="d-none d-md-table-cell">Data Prestito</th>
                 <th scope="col">Stato</th>
                 <th scope="col">Azioni</th>
               </tr>
@@ -91,6 +95,7 @@
             <tbody>
               <tr>
                 <td>I pilastri della terra</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span>
                 </td>
                 <td>
@@ -104,6 +109,7 @@
               </tr>
               <tr>
                 <td>I promessi sposi</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span>
                 </td>
                 <td>
@@ -117,6 +123,7 @@
               </tr>
               <tr>
                 <td>Il signore degli anelli</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-warning text-light">In prestito</span>
                 </td>
                 <td>
@@ -130,6 +137,7 @@
               </tr>
               <tr>
                 <td>Harry Potter e la pietra filosofale</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -142,6 +150,7 @@
               </tr>
               <tr>
                 <td>Il codice Da Vinci</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-danger">Non disponibile</span>
                 </td>
                 <td>
@@ -155,6 +164,7 @@
               </tr>
               <tr>
                 <td>Shining</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -167,6 +177,7 @@
               </tr>
               <tr>
                 <td>La divina commedia</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-warning text-light">In prestito</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -179,6 +190,7 @@
               </tr>
               <tr>
                 <td>Il trono di spade</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -191,6 +203,7 @@
               </tr>
               <tr>
                 <td>Il mondo di Sofia</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-danger">Non disponibile</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -203,6 +216,7 @@
               </tr>
               <tr>
                 <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-warning text-light">In prestito</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -215,6 +229,7 @@
               </tr>
               <tr>
                 <td>Il piccolo principe</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -227,6 +242,7 @@
               </tr>
               <tr>
                 <td>La storia infinita</td>
+                <td class="d-none d-md-table-cell">11.11.11</td>
                 <td><span class="badge text-bg-success">Disponibile</span></td>
                 <td>
                   <div class="d-flex justify-content-center">
@@ -269,86 +285,93 @@
               </div>
             </div>
           </div>
-        </div>
 
 
-      </div>
 
 
-      <!-- faq -->
-      <div class="col-12 col-lg-4 justify-content-center">
-        <div class="card">
-          <div class="card-header">
-            F.A.Q.
-          </div>
-          <div class="card-body">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Come aggiungere un nuovo libro?
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, unde! Laboriosam dolore
-                      repudiandae facere quos accusantium ad sint earum, nihil exercitationem aliquam inventore cum
-                      suscipit nemo eos ullam id eveniet.
-                      Placeat maiores nostrum eum tenetur ut consectetur ad deleniti eaque, ullam totam inventore
-                      laudantium id ratione fugit nihil animi similique repudiandae corrupti architecto. Sapiente
-                      explicabo architecto in, adipisci mollitia natus?
-                      Ullam voluptas repellendus cupiditate facere a, officiis perferendis inventore voluptates
-                      excepturi molestiae, neque eaque quas voluptatem nisi. Doloremque delectus illo itaque, ea tenetur
-                      nisi hic reiciendis! Amet molestias voluptatum omnis?
-                    </p>
+
+
+          <!-- faq -->
+
+          <div class="card">
+            <div class="card-header">
+              F.A.Q.
+            </div>
+            <div class="card-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Come aggiungere un nuovo libro?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, unde! Laboriosam dolore
+                        repudiandae facere quos accusantium ad sint earum, nihil exercitationem aliquam inventore cum
+                        suscipit nemo eos ullam id eveniet.
+                        Placeat maiores nostrum eum tenetur ut consectetur ad deleniti eaque, ullam totam inventore
+                        laudantium id ratione fugit nihil animi similique repudiandae corrupti architecto. Sapiente
+                        explicabo architecto in, adipisci mollitia natus?
+                        Ullam voluptas repellendus cupiditate facere a, officiis perferendis inventore voluptates
+                        excepturi molestiae, neque eaque quas voluptatem nisi. Doloremque delectus illo itaque, ea
+                        tenetur
+                        nisi hic reiciendis! Amet molestias voluptatum omnis?
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Come posso accedere all'anagrafica utenti?
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae quos eum aliquid sit
-                      ratione debitis temporibus! Quaerat provident minus voluptatem ab placeat qui sed ducimus suscipit
-                      rem, accusantium ad.
-                      Dicta dolorem quae voluptatum dolorum laboriosam at officia, itaque nemo aperiam impedit ullam
-                      cumque in? Hic expedita animi perferendis corporis asperiores unde eaque quaerat earum voluptatem.
-                      Quae nam delectus consectetur?
-                      Nisi veritatis sit cupiditate saepe totam voluptates minus iure voluptate. Reiciendis, repellat?
-                      Iure eos voluptate tempore illo nisi dolores nulla, consequatur inventore iste aliquid sed ullam
-                      eaque ut minus obcaecati?
-                      Soluta maiores ipsa ipsum sapiente libero. Facilis, ad, eos assumenda accusantium soluta modi ex
-                      odio at fugit omnis dolorum? Ipsum omnis culpa voluptatum odio accusamus placeat a quos veniam ex.
-                      Numquam earum eligendi ea repellendus beatae doloremque quaerat ullam qui inventore? Ab,
-                      architecto at doloremque obcaecati quod labore dignissimos adipisci unde itaque reprehenderit,
-                      minus magni, excepturi laborum facere nemo nesciunt.</p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Come posso accedere all'anagrafica utenti?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae quos eum aliquid
+                        sit
+                        ratione debitis temporibus! Quaerat provident minus voluptatem ab placeat qui sed ducimus
+                        suscipit
+                        rem, accusantium ad.
+                        Dicta dolorem quae voluptatum dolorum laboriosam at officia, itaque nemo aperiam impedit ullam
+                        cumque in? Hic expedita animi perferendis corporis asperiores unde eaque quaerat earum
+                        voluptatem.
+                        Quae nam delectus consectetur?
+                        Nisi veritatis sit cupiditate saepe totam voluptates minus iure voluptate. Reiciendis, repellat?
+                        Iure eos voluptate tempore illo nisi dolores nulla, consequatur inventore iste aliquid sed ullam
+                        eaque ut minus obcaecati?
+                        Soluta maiores ipsa ipsum sapiente libero. Facilis, ad, eos assumenda accusantium soluta modi ex
+                        odio at fugit omnis dolorum? Ipsum omnis culpa voluptatum odio accusamus placeat a quos veniam
+                        ex.
+                        Numquam earum eligendi ea repellendus beatae doloremque quaerat ullam qui inventore? Ab,
+                        architecto at doloremque obcaecati quod labore dignissimos adipisci unde itaque reprehenderit,
+                        minus magni, excepturi laborum facere nemo nesciunt.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Posso usare questa dashboard da mobile?
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit ipsam id magni quasi
-                      sunt quia, eius eum debitis eligendi voluptas nisi delectus, veniam voluptatem quibusdam
-                      necessitatibus asperiores, saepe alias!
-                      Aliquam reiciendis voluptate animi amet, inventore explicabo repudiandae, maxime a, in accusamus
-                      odit laudantium modi error. Aperiam, aliquid aspernatur? Necessitatibus aliquam a voluptates
-                      perspiciatis. Ex aspernatur commodi omnis iste officiis?
-                      Hic magnam aliquid ipsam, doloribus ipsa reprehenderit veritatis. Est quasi ducimus facilis beatae
-                      voluptatibus amet deserunt eum nam. Sunt optio commodi pariatur quo qui neque omnis, voluptatum
-                      obcaecati eligendi earum!</p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit ipsam id magni quasi
+                        sunt quia, eius eum debitis eligendi voluptas nisi delectus, veniam voluptatem quibusdam
+                        necessitatibus asperiores, saepe alias!
+                        Aliquam reiciendis voluptate animi amet, inventore explicabo repudiandae, maxime a, in accusamus
+                        odit laudantium modi error. Aperiam, aliquid aspernatur? Necessitatibus aliquam a voluptates
+                        perspiciatis. Ex aspernatur commodi omnis iste officiis?
+                        Hic magnam aliquid ipsam, doloribus ipsa reprehenderit veritatis. Est quasi ducimus facilis
+                        beatae
+                        voluptatibus amet deserunt eum nam. Sunt optio commodi pariatur quo qui neque omnis, voluptatum
+                        obcaecati eligendi earum!</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -357,8 +380,6 @@
         </div>
       </div>
     </div>
-
-
 
   </main>
 
