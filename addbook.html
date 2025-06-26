@@ -46,10 +46,7 @@
                   </li>
                 </ul>
 
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search" />
-                  <button class="btn btn-outline-light" type="submit">Cerca</button>
-                </form>
+
               </div>
             </div>
           </nav>
@@ -93,20 +90,80 @@
         </div>
       </div>
 
-      <div class="row">
-<div class="col-lg-12">
+      <!-- titolo -->
 
-<div class="mb-3">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Titolo</label>
             <input type="text" class="form-control" id="exampleFormControlInput1"
               placeholder="Inserisci il titolo del libro">
-              <div id="" class="form-text">
- Titolo versione italiana
-</div>
+            <div id="" class="form-text">
+              Titolo versione italiana
+            </div>
+          </div>
 
-</div>
+        </div>
+      </div>
 
 
+
+      <!-- genere anno etc -->
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="" class="mb-2">Genere</label>
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Scegli il genere</option>
+            <option value="1">Fantasy</option>
+            <option value="2">Thriller</option>
+            <option value="3">SciFi</option>
+            <option value="4">Biografico</option>
+          </select>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Anno di Pubblicazione</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci anno">
+          </div>
+
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">ISBN#</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci codice ISBN#">
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <hr>
+
+
+
+      <!-- note -->
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <label for="" class="mb-2">Note</label>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Inserisci eventuali note sul libro</label>
+          </div>
+        </div>
       </div>
 
 
@@ -117,22 +174,9 @@
 
 
 
-
-
-
-
-      <!-- titolo -->
-
-
-
-      <!-- genere, anno, isbn -->
-
-
-
-
-
-
     </div>
+
+
   </main>
 
 </body>
